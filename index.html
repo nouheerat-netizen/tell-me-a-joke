@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeBox - Spread Happiness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">😂 JokeBox</a>
+
+        <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode">
+            🌙 Dark Mode
+        </button>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <span class="tag">YOUR DAILY DOSE OF HAPPINESS</span>
+            <h1>Life is better with <span>laughter!</span></h1>
+            <p>Choose your mood, grab a joke and let the laughter begin.</p>
+        </section>
+
+        <!-- Mood Selection -->
+        <section class="mood-section">
+            <h2>How are you feeling today? 💭</h2>
+            <p>Choose your mood to find a joke.</p>
+
+            <div class="mood-options">
+                <button class="mood-card active" data-mood="happy">
+                    <span>😂</span>
+                    <strong>Happy</strong>
+                </button>
+
+                <button class="mood-card" data-mood="bored">
+                    <span>😴</span>
+                    <strong>Bored</strong>
+                </button>
+
+                <button class="mood-card" data-mood="sad">
+                    <span>😟</span>
+                    <strong>Need Cheer</strong>
+                </button>
+
+                <button class="mood-card" data-mood="curious">
+                    <span>🤓</span>
+                    <strong>Curious</strong>
+                </button>
+            </div>
+        </section>
+
+        <!-- Joke Generator -->
+        <section class="joke-card">
+            <div class="joke-top">
+                <span>✨ YOUR JOKE IS HERE</span>
+                <span id="jokeCategory">Happy Mood</span>
+            </div>
+
+            <div class="joke-content">
+                <div class="joke-emoji">🤣</div>
+                <h2 id="jokeText">Ready for a little laughter?</h2>
+                <p id="jokeDelivery"></p>
+            </div>
+
+            <p id="statusMessage" class="status"></p>
+
+            <button id="jokeBtn" class="joke-btn">
+                Tell Me a Joke 😂
+            </button>
+
+            <div class="action-buttons">
+                <button id="copyBtn" class="action-btn">📋 Copy</button>
+                
+                
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ and a little bit of humour.</p>
+        <p>© 2026 JokeBox</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
